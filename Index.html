@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User-Customizable Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the User-Customizable Page</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Customize Your Experience</h2>
+            <div>
+                <label for="background-color">Background Color:</label>
+                <input type="color" id="background-color" value="#ffffff">
+            </div>
+            <div>
+                <label for="text-color">Text Color:</label>
+                <input type="color" id="text-color" value="#000000">
+            </div>
+            <div>
+                <label for="font-family">Font Family:</label>
+                <select id="font-family">
+                    <option value="Arial">Arial</option>
+                    <option value="Times New Roman">Times New Roman</option>
+                    <option value="Verdana">Verdana</option>
+                    <option value="Courier New">Courier New</option>
+                </select>
+            </div>
+        </section>
+
+        <section id="content">
+            <h2>Content Area</h2>
+            <p>This is where the main content of the page will be displayed.</p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
