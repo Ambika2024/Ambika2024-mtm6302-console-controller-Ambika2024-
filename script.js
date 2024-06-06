@@ -1,27 +1,37 @@
-// Get references to the customization elements
-const backgroundColorInput = document.getElementById('background-color');
-const textColorInput = document.getElementById('text-color');
-const fontFamilySelect = document.getElementById('font-family');
-
-// Get reference to the content area
-const contentArea = document.getElementById('content');
-
-// Add event listeners to the customization elements
-backgroundColorInput.addEventListener('input', updateBackgroundColor);
-textColorInput.addEventListener('input', updateTextColor);
-fontFamilySelect.addEventListener('change', updateFontFamily);
-
-// Function to update the background color
-function updateBackgroundColor() {
-    document.body.style.backgroundColor = backgroundColorInput.value;
+// Function to set the title
+function setTitle(newTitle) {
+    const titleElement = document.getElementById('title');
+    titleElement.textContent = newTitle;
 }
 
-// Function to update the text color
-function updateTextColor() {
-    document.body.style.color = textColorInput.value;
+// Function to set the description
+function setDescription(newDescription) {
+    const descriptionElement = document.getElementById('description');
+    descriptionElement.textContent = newDescription;
 }
 
-// Function to update the font family
-function updateFontFamily() {
-    document.body.style.fontFamily = fontFamilySelect.value;
+// Function to set the background color
+function setBackgroundColor(color) {
+    document.body.style.backgroundColor = color;
 }
+
+// Function to set the font color
+function setFontColor(color) {
+    document.body.style.color = color;
+    const allElements = document.querySelectorAll('*');
+    allElements.forEach(element => {
+        element.style.color = color;
+    });
+}
+
+// Function to set the theme
+function setTheme(theme) {
+    if (theme === 'dark') {
+        document.body.classList.add('dark-theme');
+        document.body.classList.remove('light-theme');
+    } else if (theme === 'light') {
+        document.body.classList.add('light-theme');
+        document.body.classList.remove('dark-theme');
+    }
+}
+
