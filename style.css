@@ -1,0 +1,15 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.dark-theme {
+    background-color: #76e3b7;
+    color: #fff;
+}
+
+.light-theme {
+    background-color: #0fa37c;
+    color: #000;
+}
