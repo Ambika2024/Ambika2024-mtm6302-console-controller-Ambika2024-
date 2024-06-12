@@ -1,15 +1,36 @@
-body {
-    font-family: Arial, sans-serif;
+/* Reset CSS */
+body, h1, p {
     margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Default Styles */
+  body {
+    background-color: #619fef;
+    color: #333;
+  }
+  
+  header, footer {
+    background-color: #637ae2;
+    color: white;
+    text-align: center;
+    padding: 1em;
+  }
+  
+  main {
     padding: 20px;
-}
-
-.dark-theme {
-    background-color: #76e3b7;
-    color: #e81010;
-}
-
-.light-theme {
-    background-color: #0fa37c;
-    color: #000;
-}
+    text-align: center;
+  }
+  
+  /* Light Theme */
+  .light-theme {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  /* Dark Theme */
+  .dark-theme {
+    background-color: #b0c0f9;
+    color: #ffffff;
+  }
