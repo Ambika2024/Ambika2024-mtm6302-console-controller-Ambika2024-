@@ -11,4 +11,8 @@ step 4: use command:-
 add text file
 git commit any message
 git push origin main
+![Screenshot 2024-06-12 003922](https://github.com/Ambika2024/Ambika2024-mtm6302-console-controller-Ambika2024-/assets/145181223/8fc31f5a-4cbb-4e69-bf06-9ea87be830f6)
+Output:
+![Screenshot 2024-06-12 002614](https://github.com/Ambika2024/Ambika2024-mtm6302-console-controller-Ambika2024-/assets/145181223/79459230-29d3-4b01-8f1c-0fbd91750e76)
+
 
